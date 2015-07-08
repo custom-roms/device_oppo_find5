@@ -17,6 +17,8 @@
 # inherit from APQ8064 common
 -include device/oppo/apq8064-common/BoardConfigCommon.mk
 
+TARGET_SPECIFIC_HEADER_PATH := device/oppo/find5/include
+
 TARGET_BOARD_INFO_FILE := device/oppo/find5/board-info.txt
 
 # Kernel
@@ -26,7 +28,7 @@ TARGET_KERNEL_CONFIG := cyanogenmod_x909_defconfig
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/oppo/find5/bluetooth
 
 # Camera
-COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
+TARGET_RELEASE_CPPFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 # CM  Hardware
 BOARD_HARDWARE_CLASS += device/oppo/find5/cmhw
