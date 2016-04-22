@@ -1,14 +1,14 @@
 $(call inherit-product, device/oppo/find5/full_find5.mk)
 
 # Inherit some common CM stuff
-#$(call inherit-product, vendor/pac/config/telephony.mk)
+#$(call inherit-product, vendor/liquid/config/gsm.mk)
 # Enhanced NFC
-$(call inherit-product, vendor/pac/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/pac/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := find5
-PRODUCT_NAME := pac_find5
+PRODUCT_NAME := liquid_find5
 PRODUCT_BRAND := OPPO
 PRODUCT_MODEL := find5
 PRODUCT_MANUFACTURER := OPPO

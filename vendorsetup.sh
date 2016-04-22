@@ -1,1 +1,1 @@
-add_lunch_combo pac_find5-userdebug
+add_lunch_combo liquid_find5-userdebug
