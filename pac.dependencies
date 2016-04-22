@@ -1,0 +1,8 @@
+[
+    {
+        "remote":      "cm",
+        "repository":  "android_device_oppo_apq8064-common",
+        "target_path": "device/oppo/apq8064-common",
+        "revision":    "cm-13.0"
+    }
+]
