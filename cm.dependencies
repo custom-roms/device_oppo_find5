@@ -1,6 +1,32 @@
 [
  {
-   "repository": "android_device_oppo_apq8064-common",
-   "target_path": "device/oppo/apq8064-common"
+   "remote": "github",
+   "repository": "wuxianlin/android_device_oppo_apq8064-common",
+   "target_path": "device/oppo/apq8064-common",
+   "revision": "cm-13.0"
+ },
+ {
+   "remote": "github",
+   "repository": "wuxianlin/android_kernel_oppo_n1",
+   "target_path": "kernel/oppo/n1",
+   "revision": "cm-13.0"
+ },
+ {
+   "remote": "github",
+   "repository": "TheMuppets/proprietary_vendor_oppo",
+   "target_path": "vendor/oppo",
+   "revision": "cm-13.0"
+ },
+ {
+   "remote": "github",
+   "repository": "CyanogenMod/android_device_oppo_common",
+   "target_path": "device/oppo/common",
+   "revision": "cm-13.0"
+ },
+ {
+   "remote": "github",
+   "repository": "CyanogenMod/android_device_qcom_common",
+   "target_path": "device/qcom/common",
+   "revision": "cm-13.0"
  }
 ]
