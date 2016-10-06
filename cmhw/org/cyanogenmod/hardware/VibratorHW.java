@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014 The CyanogenMod Project
+ * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,39 +16,48 @@
 
 package org.cyanogenmod.hardware;
 
-import org.cyanogenmod.hardware.util.FileUtils;
-import java.io.File;
+import org.cyanogenmod.internal.util.FileUtils;
+
+import android.util.Log;
 
 public class VibratorHW {
-    private static String LEVEL_PATH = "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-vib/amp";
-    private static int MAX = 100;
-    private static int MIN = 0;
+
+    private static final String TAG = "VibratorHW";
+
+    private static final String LEVEL_PATH = "/sys/devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-vib/amp";
+    private static final int MAX = 100;
+    private static final int MIN = 0;
 
     public static boolean isSupported() {
-        return new File(LEVEL_PATH).exists();
+        return FileUtils.isFileWritable(LEVEL_PATH);
     }
 
-    public static int getMaxIntensity()  {
+    public static int getMaxIntensity() {
         return MAX;
     }
 
-    public static int getMinIntensity()  {
+    public static int getMinIntensity() {
         return MIN;
     }
 
-    public static int getWarningThreshold()  {
+    public static int getWarningThreshold() {
         return -1;
     }
 
-    public static int getCurIntensity()  {
-        return Integer.parseInt(FileUtils.readOneLine(LEVEL_PATH));
+    public static int getCurIntensity() {
+        try {
+            return Integer.parseInt(FileUtils.readOneLine(LEVEL_PATH));
+        } catch (Exception e) {
+            Log.e(TAG, e.getMessage(), e);
+        }
+        return -1;
     }
 
-    public static int getDefaultIntensity()  {
+    public static int getDefaultIntensity() {
         return getMaxIntensity();
     }
 
-    public static boolean setIntensity(int intensity)  {
+    public static boolean setIntensity(int intensity) {
         return FileUtils.writeLine(LEVEL_PATH, String.valueOf(intensity));
     }
 }
