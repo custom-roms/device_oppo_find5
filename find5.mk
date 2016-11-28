@@ -17,6 +17,10 @@
 # overlays
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+	hci_qcomm_init
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8960
@@ -47,6 +51,9 @@ PRODUCT_PACKAGES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml
+
+#PRODUCT_COPY_FILES += \
+	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 # call the proprietary setup
 $(call inherit-product-if-exists, vendor/oppo/find5/find5-vendor.mk)
