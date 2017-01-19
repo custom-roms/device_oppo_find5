@@ -1,3 +1,1 @@
-add_lunch_combo cm_find5-user
-add_lunch_combo cm_find5-userdebug
-add_lunch_combo cm_find5-eng
+add_lunch_combo aokp_find5-userdebug
