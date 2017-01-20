@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- *********************** DEVICES & KERNELS *********************** -->
+
+  <!-- Asus -->
+  <!-- Nexus 7 wi-fi -->
+  <project name="AOKP/device_asus_flo" path="device/asus/flo" remote="aokp" revision="nougat" />
+  <project name="LineageOS/android_kernel_google_msm" path="kernel/google/msm" remote="cm" revision="cm-14.1" />
+  <!-- Common repos -->
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="cm" revision="cm-14.1" />
+  <!-- Zenfone 2 -->
+  <project name="AOKP/device_asus_Z00A" path="device/asus/Z00A" remote="aokp" revision="nougat" />
+  <project name="AOKP/device_asus_Z008" path="device/asus/Z008" remote="aokp" revision="nougat" />
+  <!-- Common repos -->
+  <project name="LineageOS/android_device_asus_mofd-common" path="device/asus/mofd-common" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_kernel_asus_moorefield" path="kernel/asus/moorefield" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="cm" revision="cm-14.1" />
+  <!-- HTC -->
+  <!-- One M8 -->
+  <project name="AOKP/device_htc_m8" path="device/htc/m8" remote="aokp" revision="nougat" />
+  <project name="LineageOS/android_kernel_htc_msm8974" path="kernel/htc/msm8974" remote="cm" revision="cm-14.1" />
+  <!-- Common repos -->
+  <project name="LineageOS/android_device_htc_m8-common" path="device/htc/m8-common" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_device_htc_msm8974-common" path="device/htc/msm8974-common" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
+
+  <!-- Lenovo -->
+  <!-- Lenovo Vibe K5/K5 Plus -->
+  <project path="device/lenovo/A6020" name="AOKP/device_lenovo_A6020" remote="github" revision="nougat" />
+  <project path="kernel/lenovo/msm8929" name="boulzordev/android_kernel_lenovo_msm8929" remote="github" revision="cm-14.1" />
+  <!-- Common repos -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github"revision="cm-14.1" />
+  <project path="external/sony/boringssl-compat" name="LineageOS/android_external_sony_boringssl-compat" remote="github" revision="cm-14.1"/>
+  <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1"/>
+  <project name="LineageOS/android_external_bson" path="external/bson" remote="github" revision="cm-14.1" />
+
+  <!-- LGe -->
+  <!-- LG G3  -->
+  <project name="AOKP/device_lge_d855" path="device/lge/d855" remote="aokp" branch="nougat" />
+  <project name="LineageOS/android_kernel_lge_g3" path="kernel/lge/g3" remote="cm" branch="cm-14.1" />
+  <!-- Common device repos -->
+  <project name="LineageOS/android_device_lge_g3-common" path="device/lge/g3/common" remote="cm" branch="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github"revision="cm-14.1" />
+
+  <!-- Motorola -->
+  <!-- Moto E -->
+  <project path="device/motorola/condor" name="AOKP/device_motorola_condor" remote="github" revision="nougat"/>
+  <project name="LineageOS/android_kernel_motorola_msm8610" path="kernel/motorola/msm8610" remote="cm" revision="cm-14.1" />
+
+  <!-- Moto G4/G4 Plus -->
+  <project path="device/motorola/athene" name="AOKP/device_motorola_athene" remote="github" revision="nougat"/>
+  <project path="kernel/motorola/msm8952" name="LineageOS/android_kernel_motorola_msm8952" remote="github" revision="cm-14.1"/>
+
+  <!-- Moto G4 Play -->
+  <project path="device/motorola/harpia" name="AOKP/device_motorola_harpia" remote="github" revision="nougat"/>
+  <!-- Moto X Play -->
+  <project path="device/motorola/lux" name="AOKP/device_motorola_lux" remote="github" revision="nougat"/>
+
+  <!-- Moto G3 osprey -->
+  <project path="device/motorola/osprey" name="AOKP/device_motorola_osprey" remote="github" revision="nougat"/>
+
+  <!-- Common device repos -->
+  <project name="AOKP/device_motorola_msm8916-common" path="device/motorola/msm8916-common" remote="aokp" revision="nougat" />
+  <project name="LineageOS/android_device_motorola_msm8610-common" path="device/motorola/msm8916-common" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github"revision="cm-14.1" />
+  <project name="LineageOS/android_kernel_motorola_msm8916" path="kernel/motorola/msm8916" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="cm" revision="cm-14.1" />
+
+  <!-- Nextbit -->
+  <!-- Robin (ether) -->
+  <project name="AOKP/device_nextbit_ether" path="device/nextbit/ether" remote="aokp" revision="nougat" />
+  <project name="LineageOS/android_kernel_nextbit_msm8992" path="kernel/nextbit/msm8992" remote="cm" revision="cm-14.1" />
+  <!-- Common device repos -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="cm" revision="cm-14.1" />
+
+  <!-- Oneplus -->
+  <!-- Oneplus 3 -->
+  <project name="AOKP/device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="aokp" branch="nougat" />
+  <project name="LineageOS/android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="cm" branch="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" path="vendor/nxp-nfc/opensource/frameworks" remote="cm" branch="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" path="vendor/nxp-nfc/opensource/libnfc-nci" remote="cm" branch="cm-14.1" />
+  <project name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" path="vendor/nxp-nfc/opensource/Nfc" remote="cm" branch="cm-14.1" />
+
+  <!-- Onyx -->
+  <project name="AOKP/device_oneplus_onyx" path="device/oneplus/onyx" remote="aokp" branch="nougat" />
+  <project name="LineageOS/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="cm" branch="cm-14.1" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" remote="cm" revision="cm-14.1" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" remote="cm" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+
+  <!-- Common device repos -->
+  <project name="Cyanogenmod/android_device_oppo_common" path="device/oppo/common" remote="cm" branch="cm-14.1" />
+
+  <!-- Samsung -->
+  <!-- Samsung Galaxy S5 Family -->
+  <project path="device/samsung/klte-common" name="LineageOS/android_device_samsung_klte-common" remote="cm"  revision="cm-14.1"/>
+  <project path="device/samsung/klte" name="AOKP/device_samsung_klte" remote="aokp" />
+  <project path="device/samsung/kltedv" name="AOKP/device_samsung_kltedv" remote="aokp"  />
+  <project path="device/samsung/kltespr" name="AOKP/device_samsung_kltespr" remote="aokp"  />
+  <project path="device/samsung/klteusc" name="AOKP/device_samsung_klteusc" remote="aokp"  />
+  <project path="kernel/samsung/klte" name="LineageOS/android_kernel_samsung_klte" remote="cm" revision="cm-14.1" />
+  <project path="device/samsung/msm8974-common" name="LineageOS/android_device_samsung_msm8974-common" remote="cm" revision="cm-14.1" />
+
+  <!-- Samsung Galaxy S4 Mini Family -->
+  <project name="LineageOS/android_device_samsung_msm8930-common" path="device/samsung/msm8930-common" remote="github" revision="cm-14.1" />
+  <project name="AOKP/device_samsung_serrano-common" path="device/samsung/serrano-common" remote="github" revision="nougat" />
+  <project name="LineageOS/android_kernel_samsung_msm8930-common" path="kernel/samsung/msm8930-common" remote="github" revision="cm-14.1" />
+  <project name="AOKP/device_samsung_serrano3gxx" path="device/samsung/serrano3gxx" remote="github" revision="nougat" />
+  <project name="AOKP/device_samsung_serranoltexx" path="device/samsung/serranoltexx" remote="github" revision="nougat" />
+  <project name="AOKP/device_samsung_serranodsdd" path="device/samsung/serranodsdd"  remote="github" revision="nougat" />
+  
+   <!-- Samsung Common Devices Sources -->
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="cm" revision="cm-14.1" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings"  remote="cm" revision="cm-14.1" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="cm" revision="cm-14.1" />
+  
+  <!-- Xiaomi -->
+  <!-- Xiaomi Mi3/4 W/C -->
+  <project name="AOKP/device_xiaomi_cancro" path="device/xiaomi/cancro" remote="aokp" branch="nougat" />
+  <project name="LineageOS/android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="cm" revision="cm-14.1" />
+  <!-- Xiaomi Redmi 1S -->
+  <project name="AOKP/device_xiaomi_armani" path="device/xiaomi/armani" remote="aokp" branch="nougat" />
+  <project name="LineageOS/android_kernel_xiaomi_armani" path="kernel/xiaomi/armani" remote="cm" revision="cm-14.1" />
+
+
+  <!-- *********************** VENDOR BLOBS *********************** -->
+
+  <!-- Asus -->
+  <project name="TheMuppets/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
+  <project name="jrior001/proprietary_vendor_asus" path="vendor/asus" remote="github" revision="cm-14.1" />
+  <!-- HTC -->
+  <project name="TheMuppets/proprietary_vendor_htc" path="vendor/htc" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+
+  <!-- Lenovo -->
+  <project path="vendor/lenovo/A6020" name="boulzordev/android_vendor_lenovo_A6020" remote="github" revision="cm-14.1" />
+
+  <!-- LGe -->
+  <project name="TheMuppets/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="cm-14.1" />
+
+  <!-- Motorola -->
+  <project path="vendor/motorola" name="TheMuppets/proprietary_vendor_motorola" remote="github" revision="cm-14.1"/>
+
+  <!-- Nextbit -->
+  <project name="TheMuppets/proprietary_vendor_nextbit" path="vendor/nextbit" remote="github" revision="refs/heads/cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="refs/heads/cm-14.1" />
+
+  <!-- Oneplus -->
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+  
+  <!-- Samsung -->
+  <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-14.1" />
+  
+  <!-- Xiaomi -->
+  <project name="TheMuppets/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+
+  <!-- Oppo Find5 -->
+  <project name="wolverine2k/android_kernel_oppo_n1" path="kernel/oppo/n1" remote="github" revision="cm-14.1" />
+  <project name="wuxianlin/android_device_oppo_apq8064-common" path="device/oppo/apq8064-common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-14.1" />
+  <project name="wolverine2k/android_device_oppo_find5" path="device/oppo/find5" remote="github" revision="cm-14.0" />
+  <!--<project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" /> -->
+
+</manifest>
