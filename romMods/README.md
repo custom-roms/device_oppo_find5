@@ -13,3 +13,6 @@ ROM to compile properly.
 4. project platform_manifest/
  -m	devices.xml
 
+5. project device/oppo/apq8064-common/
+ -m	lvm/lvm_init_recovery.sh
+ -m	audio/audio_policy.conf
