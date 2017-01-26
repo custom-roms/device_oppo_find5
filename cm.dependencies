@@ -34,5 +34,9 @@
    "repository": "wolverine2k/android_device_oppo_find5",
    "target_path": "device/oppo/find5",
    "branch": "aokp-7"
+ },
+ {
+   "repository": "android_packages_resources_devicesettings",
+   "target_path": "packages/resources/devicesettings"
  }
 ]

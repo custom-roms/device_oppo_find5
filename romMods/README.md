@@ -16,3 +16,6 @@ ROM to compile properly.
 5. project device/oppo/apq8064-common/
  -m	lvm/lvm_init_recovery.sh
  -m	audio/audio_policy.conf
+
+6. project kernel/oppo/n1
+ -m	include/sound/compress_offload.h
