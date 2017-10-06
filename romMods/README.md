@@ -6,6 +6,8 @@ ROM to compile properly.
 
 2. project hardware/qcom/audio-caf/msm8960/
  -m	legacy/policy_hal/AudioPolicyManager.cpp
+ -m	legacy/policy_hal/AudioPolicyManager.h
+ -m hal/voice_extn/voice_params.h
 
 3. project kernel/oppo/n1/
  -m	include/sound/compress_offload.h
