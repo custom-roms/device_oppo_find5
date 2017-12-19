@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2014-2016 The CyanogenMod Project
+ * Copyright (C) 2016 The CyanogenMod Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.hardware;
+package org.lineageos.hardware;
 
-import org.cyanogenmod.internal.util.FileUtils;
+import org.lineageos.internal.util.FileUtils;
 
 /*
  * Disable capacitive keys
@@ -26,20 +26,20 @@ import org.cyanogenmod.internal.util.FileUtils;
  * really should not be using this on a device with mechanical or
  * otherwise visible-when-inactive keys
  */
+
 public class KeyDisabler {
-    private static final String CONTROL_PATH =
-            "/proc/touchpanel/keypad_enable";
+
+    private static String CONTROL_PATH = "/proc/touchpanel/keypad_enable";
 
     public static boolean isSupported() {
-        return FileUtils.isFileReadable(CONTROL_PATH) &&
-                FileUtils.isFileWritable(CONTROL_PATH);
+        return FileUtils.isFileWritable(CONTROL_PATH);
     }
 
     public static boolean isActive() {
-        return "0".equals(FileUtils.readOneLine(CONTROL_PATH));
+        return FileUtils.readOneLine(CONTROL_PATH).equals("0");
     }
 
     public static boolean setActive(boolean state) {
-        return FileUtils.writeLine(CONTROL_PATH, state ? "0" : "1");
+        return FileUtils.writeLine(CONTROL_PATH, (state ? "0" : "1"));
     }
 }
